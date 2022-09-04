@@ -1,0 +1,22 @@
+<section>
+  <div class="information" *ngFor="let user of personalList|async">
+    <h4>{{user.id}}) {{user.name}}</h4>
+    <ul class="information-list">
+      <li>
+        <details>
+          <ul>
+            <li> <span class="item"> email: </span>{{user.email}}</li>
+            <li> <span class="item"> phone: </span>{{user.phone}}</li>
+            <li> <span class="item"> street: </span> {{user.address.street}}</li>
+            <li> <span class="item"> suite: </span> {{user.address.suite}}</li>
+            <li> <span class="item"> city: </span> {{user.address.city}}</li>
+            <li> <span class="item"> zipcode: </span> {{user.address.zipcode}}</li>
+            <li> <span class="item"> website: </span> {{user.website}}</li>
+            <li> <span class="item"> name company:</span> {{user.company.name}}</li>
+            <li> <span class="item"> catch phrase:</span> {{user.company.catchPhrase}}</li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</section>

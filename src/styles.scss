@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgb(132, 127, 127), 10%, white);
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.547);
+
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.547);
+    transition: 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      color: grey;
+    }
+  }
+}
+
+app-login {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

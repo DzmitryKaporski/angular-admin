@@ -1,0 +1,32 @@
+<div class="wrap-page">
+  <fieldset>
+    <legend><i>Form admin</i></legend>
+    <form [formGroup]="loginForm" (ngSubmit)="submitLogin()" class="form" action="">
+      <h2>Login</h2>
+      <p>
+        <span class="text">Please enter your login and password!</span>
+      </p>
+
+      <div class="wrap-input">
+        <label for="typeEmail">e-mail:</label>
+        <span *ngIf="this.loginForm.get('email')?.invalid && this.loginForm.get('email')?.touched" class="warning">
+          admin@gmail.com</span>
+        <br>
+        <input formControlName="email" type="email" id="typeEmail" placeholder="email required">
+      </div>
+      <br>
+      <div class="wrap-input">
+        <label for="typePassword">password:</label>
+        <span *ngIf="this.loginForm.get('password')?.invalid && this.loginForm.get('password')?.touched"
+          class="warning">
+          admin123</span>
+        <br>
+        <input formControlName="password" type="password" id="typePassword" placeholder="password required">
+      </div>
+
+      <div class="button-wrap">
+        <button [disabled]="loginForm.invalid" type="submit" class="button-submit">Submit</button>
+      </div>
+    </form>
+  </fieldset>
+</div>

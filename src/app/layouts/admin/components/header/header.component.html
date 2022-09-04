@@ -1,0 +1,16 @@
+<div class="wrap-page">
+  <div class="header">
+    <div class="admin-menu">Admin menu</div>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a routerLinkActive="active" routerLink="home">Home</a></li>
+        <li class="nav-item"><a routerLinkActive="active" routerLink="contacts">Personal contacts</a></li>
+      </ul>
+    </nav>
+    <div class="button-logout-wrap">
+      <button type="button" class="button-logout" (click)="logout()">Logout</button>
+    </div>
+  </div>
+  <div>
+    <app-loading *ngIf="isLoading | async"></app-loading>
+  </div>
