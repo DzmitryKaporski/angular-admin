@@ -1,4 +1,4 @@
-# AngularAdmin
+# deploy: [angular-admin](https://angular_app-admin.surge.sh/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
