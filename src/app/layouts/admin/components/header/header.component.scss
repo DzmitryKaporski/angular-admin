@@ -60,18 +60,18 @@
   align-items: center;
 
   .button-logout {
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
     border: none;
-    border-radius: 0.4rem;
-    background: linear-gradient(rgb(180, 168, 168), 50%, rgb(241, 238, 238));
+    border-radius: 15rem;
+    background-color: rgba(240, 248, 255, 0);
     transition: 0.3s;
+    font-size: 1.1rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.547);
 
     &:hover {
-
-      color: red;
-      box-shadow: inset 80px 0 0 0 white;
+      color: white;
+      box-shadow: inset 80px 0 0 0 red;
     }
 
     @media(max-width: 600px) {
