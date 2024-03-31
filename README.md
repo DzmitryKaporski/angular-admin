@@ -1,5 +1,5 @@
 # deploy: [angular-admin](https://angular_app-admin_dk.surge.sh/)
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2
 
 [![link](https://i.ibb.co/VN2X7cC/Screenshot-130.png)](https://angular_app-admin_dk.surge.sh/)
 
